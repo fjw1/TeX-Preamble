@@ -1,0 +1,18 @@
+% Theorem Environment
+
+% Packages
+\usepackage{xcolor}     % for colour
+\usepackage{ntheorem}   % for theorem-like environments
+\usepackage{mdframed}   % for framing
+
+
+% Formatting
+
+\theoremstyle{break}
+\theoremheaderfont{\bfseries}
+\newmdtheoremenv[%
+linecolor=gray,leftmargin=60,%
+rightmargin=40,
+backgroundcolor=gray!40,%
+innertopmargin=0pt,%
+ntheorem]{assumptions}{Assumptions}[section]

@@ -1,0 +1,31 @@
+% Custom
+
+% Matrix
+\newcommand{\bb}[1]{\bm{#1}}
+\newcommand{\bbt}[1]{\bm{#1}'}
+\newcommand{\iv}{^{-1}} % Inverse shortcut
+
+% Functions
+\renewcommand{\lim}[2]{\underset{#1\rightarrow #2}{\text{lim}}}
+\renewcommand{\max}[1]{\underset{#1}{\text{max}}\ }
+\newcommand{\argmax}[1]{\underset{#1}{\text{argmax}}\ }
+\renewcommand{\min}[1]{\underset{#1}{\text{min}}\ }
+\newcommand{\argmin}[1]{\underset{#1}{\text{argmax}}\ }
+\newcommand{\st}{\text{s.t.}\ }
+\newcommand{\R}{\mathbb{R}} % Real number sign
+\newcommand{\e}[1]{\mathrm{e}^{#1}}
+\renewcommand{\log}[1]{\text{Log}\left[#1\right]}
+\renewcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\eutil}[1]{\text{EU}\left[#1\right]}
+
+
+% Econometrics
+\newcommand{\olsx}{\left(\bbt{X}\bb{X}\right)\iv\bbt{X}}
+\newcommand{\bols}{\hat{\bb{\beta}}_{OLS}}
+\newcommand{\var}[1]{\text{Var}\left[ #1 \right]}
+\newcommand{\expec}[1]{\mathbb{E}\left[ #1 \right]}
+\newcommand{\avar}[1]{\text{AVar}\left[ #1 \right]}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\projection}{\bb{X}(\bbt{X}\bb{X})\iv\bbt{X}}
+\newcommand{\annh}{\bb{I}_n - \bb{P}_{\bb{X}}}
+\newcommand{\bgls}{\hat{\bb{\beta}}_{GLS}}
