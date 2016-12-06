@@ -1,9 +1,11 @@
 % Custom
 
 % Matrix
-\newcommand{\bb}[1]{\bm{#1}}
-\newcommand{\bbt}[1]{\bm{#1}'}
+\newcommand{\bb}[1]{\bm{#1}} % Matrix bold font
+\newcommand{\bbt}[1]{\bm{#1}'} % Matrix transpose
 \newcommand{\iv}{^{-1}} % Inverse shortcut
+\newcommand{\projection}{\bb{X}(\bbt{X}\bb{X})\iv\bbt{X}} % Projection matrix
+\newcommand{\annh}{\bb{I}_n - \bb{P}_{\bb{X}}} % Annihilation matrix
 
 % Functions
 \renewcommand{\lim}[2]{\underset{#1\rightarrow #2}{\text{lim}}}
@@ -16,16 +18,24 @@
 \newcommand{\e}[1]{\mathrm{e}^{#1}}
 \renewcommand{\log}[1]{\text{Log}\left[#1\right]}
 \renewcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\eutil}[1]{\text{EU}\left[#1\right]}
 
 
-% Econometrics
-\newcommand{\olsx}{\left(\bbt{X}\bb{X}\right)\iv\bbt{X}}
-\newcommand{\bols}{\hat{\bb{\beta}}_{OLS}}
+
+% Statistics
 \newcommand{\var}[1]{\text{Var}\left[ #1 \right]}
 \newcommand{\expec}[1]{\mathbb{E}\left[ #1 \right]}
 \newcommand{\avar}[1]{\text{AVar}\left[ #1 \right]}
+\newcommand{\plim}[1]{\underset{n\rightarrow\infty}{p\text{lim}}\left[ #1 \right]}
+
+% Econometrics
+
+
+
+
+% Formula Shorcuts
+\newcommand{\olsx}{\left(\bbt{X}\bb{X}\right)\iv\bbt{X}}
+\newcommand{\bols}{\hat{\bb{\beta}}_{OLS}}
 \newcommand{\eps}{\varepsilon}
-\newcommand{\projection}{\bb{X}(\bbt{X}\bb{X})\iv\bbt{X}}
-\newcommand{\annh}{\bb{I}_n - \bb{P}_{\bb{X}}}
-\newcommand{\bgls}{\hat{\bb{\beta}}_{GLS}}
+\newcommand{\bgls}{\hat{\bb{\beta}}_{\text{GLS}}}
+\newcommand{\bgmm}{\hat{\bb{\beta}}_{\text{GMM}}}
+\newcommand{\eutil}[1]{\text{EU}\left[#1\right]}
